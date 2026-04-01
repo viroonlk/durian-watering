@@ -5,7 +5,7 @@ import Sidebar from './components/Sidebar';
 import Dashboard from './pages/Dashboard';
 import WateringForm from './pages/WateringForm';
 
-const API_URL = 'http://localhost:3000/api/water-logs';
+const API_URL = 'https://durian-watering.onrender.com/api/water-logs';
 
 function App() {
   const [waterLogs, setWaterLogs] = useState([]);
