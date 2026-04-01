@@ -1,0 +1,46 @@
+:root {
+  --durian-green: #2b7a0b; /* สีเขียวหลัก */
+  --durian-light: #f3ffe3; /* สีพื้นหลัง */
+  --water-blue: #0ea5e9;   /* สีฟ้าสำหรับเรื่องน้ำ */
+}
+
+body {
+  background-color: var(--durian-light);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* แต่ง Sidebar */
+.sidebar-custom {
+  background-color: var(--durian-green);
+  min-height: 100vh;
+  color: white;
+}
+.nav-link-custom {
+  color: #cce7bb;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.nav-link-custom:hover, .nav-link-custom.active {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+/* แต่งปุ่มและ Card */
+.btn-durian {
+  background-color: var(--durian-green);
+  border-color: var(--durian-green);
+  color: white;
+}
+.btn-durian:hover {
+  background-color: #1f5c07;
+  color: white;
+}
+.text-durian {
+  color: var(--durian-green);
+}

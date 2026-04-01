@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --durian-dark: #1e3f20;    /* สีเขียวเข้ม (ตัวหนังสือ/สถานะ Active) */
+  --durian-primary: #2b592c; /* สีเขียวหลัก */
+  --durian-light: #e6f0dc;   /* สีเขียวอ่อน (พื้นหลัง Sidebar) */
+  --durian-bg: #f8fae6;      /* สีครีมเหลือง (พื้นหลังเว็บ) */
+}
+
+body {
+  background-color: var(--durian-bg);
+  font-family: 'Prompt', sans-serif;
+  color: #333;
+}
+
+/* --- Sidebar Styles --- */
+.sidebar-custom {
+  background-color: var(--durian-light);
+  min-height: 100vh;
+  padding: 20px;
+}
+@media (max-width: 768px) {
+  .sidebar-custom {
+    min-height: auto;
+    padding: 15px;
+  }
+}
+
+.nav-link-custom {
+  color: var(--durian-dark);
+  padding: 12px 20px;
+  border-radius: 12px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+.nav-link-custom:hover {
+  background-color: rgba(43, 89, 44, 0.1);
+}
+.nav-link-custom.active {
+  background-color: var(--durian-primary);
+  color: white;
+}
+
+/* --- Filter & Card Styles --- */
+.filter-btn {
+  background-color: white;
+  color: var(--durian-dark);
+  border: 1px solid var(--durian-dark);
+  padding: 6px 20px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.filter-btn:first-child { border-radius: 8px 0 0 8px; }
+.filter-btn:last-child { border-radius: 0 8px 8px 0; }
+.filter-btn:not(:last-child) { border-right: none; }
+.filter-btn.active, .filter-btn:hover {
+  background-color: var(--durian-dark);
+  color: white;
+}
+
+.data-card {
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+  background-color: white;
+  transition: transform 0.2s;
+}
+.data-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}

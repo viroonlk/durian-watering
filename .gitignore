@@ -1,0 +1,11 @@
+# ไม่เอาโฟลเดอร์ไลบรารี
+node_modules/
+
+# ไม่เอาไฟล์ความลับ
+.env
+backend/.env
+frontend/.env
+
+# ไม่เอาไฟล์ Certificate
+*.pem
+ca.pem
